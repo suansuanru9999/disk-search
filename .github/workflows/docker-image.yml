@@ -12,22 +12,11 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3.2.0
-
-    - name: Set up Node.js
-      uses: actions/setup-node@v3.2.0
-      with:
-        node-version: '20' # 或者你需要的 Node.js 版本
-
-    - name: Install dependencies
-      run: npm install
-
-    - name: Build the project
-      run: npm run build
+      uses: actions/checkout@v3  # 使用最新版本
 
     - name: Build Docker image
       run: |
-        docker build -t your-docker-image-name:latest .
+        docker build -t suansuanru9999/net-search:latest .  # 使用根目录的 Dockerfile
 
     - name: Log in to Docker Hub
       run: echo "${{ secrets.DOCKER_HUB_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_HUB_USERNAME }}" --password-stdin
