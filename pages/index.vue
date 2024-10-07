@@ -48,8 +48,12 @@ onMounted(async () => {
   <div class="bg-[#ffffff] dark:bg-gray-800  min-h-screen py-[60px]">
     <div class="flex flex-row items-center justify-center gap-3 mt-[80px]">
       <img class="w-[40px] h-[40px] sm:w-[60px] sm:h-[60px]" src="@/assets/my-logo.png" alt="logo">
-      <h1 class="text-[18px] sm:text-[22px] font-serif font-bold dark:text-white ">爱盼-网盘资源搜索</h1>
+      <h1 class="text-[18px] sm:text-[22px] font-serif font-bold dark:text-white ">酸酸乳-网盘资源搜索</h1>
     </div>
+    <div class="flex justify-center mt-2">
+  <a href="https://good.suansuanru.fun" class="text-blue-600 dark:text-blue-400 underline mx-2">入口1</a>
+  <a href="https://nb.suansuanru.fun" class="text-blue-600 dark:text-blue-400 underline mx-2">入口2</a>
+</div>
     <div class="max-w-[1240px] mx-auto mt-[20px]">
       <div class="w-[80%] md:w-[700px] mx-auto flex flex-row items-center gap-2 relative">
         <input class="w-full pl-6 pr-[60px] py-3 border border-gray-300 rounded-full text-sm" v-model="searchKeyword"
